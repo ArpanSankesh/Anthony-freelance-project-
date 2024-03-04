@@ -1,13 +1,25 @@
+@font-face {
+    font-family:'hkgrotesk';
+    src: url('font/hkgrotesk-regular-webfont.ttf');
+}
+
+@font-face {
+    font-family:'hkgrotesk-bold' ;
+    src: url('font/hkgrotesk-bold-webfont.ttf');
+}
+
 :root{
-    --background-color:;
-    --secondary-color:;
-    --acent-color:;
+    --background-color:#fff;
+    --secondary-color:#333;
+    --acent-color:#00c3ff;
+    --fontFade-color:#212121;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+    font-family:'hkgrotesk';
 }
 
 body{
@@ -28,10 +40,15 @@ section{
 .navigation-bar{
     width: 100%;
     height: 82px;
-    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8rem;
 }
 
 .logo{
-    
+font-size: 2.7rem;
+color: var(--acent-color);
+
 }
 
