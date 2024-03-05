@@ -32,15 +32,20 @@ body {
   height: 100%;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 
 #main {
   width: 100%;
   min-height: 100vh;
+  position: relative;
 }
 
 section {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .section-1{
@@ -55,6 +60,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 0 9rem;
+
 }
 
 .logo {
@@ -129,6 +135,8 @@ section {
 }
 
 .section-2{
-  background-color: red;
+  background-color: var(--background-color);
+  opacity: 1;
   position: relative;
+  min-height: 100vh;
 }
