@@ -44,13 +44,9 @@ body::-webkit-scrollbar{
 
 section {
   width: 100%;
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 
-.section-1{
-  position:sticky;
-  top: 0;
-}
 
 .navigation-bar {
   width: 100%;
@@ -60,10 +56,10 @@ section {
   justify-content: space-between;
   padding: 0 9rem;
  position: sticky;
+ top: 0;
 }
 
 .logo {
-  /* background-color: red; */
   width: 10rem;
   height: 3rem;
 }
@@ -122,8 +118,8 @@ section {
 
 .feature-txt{
   text-align: center;
-  /* margin-top: 3rem; */
-  font-size: 1.6rem;
+  margin-top: 3rem;
+  font-size: 1.8rem;
   color: var(--fontFade-color);
   font-weight: 700;
   font-stretch: 2rem;
@@ -135,20 +131,25 @@ section {
   text-align: center;
   margin-top: 0.8rem;
   color: #333;
-  /* letter-spacing: 0.5px; */
 }
 
-.section-2{
+.service-section{
   background-color: var(--background-color);
   opacity: 1;
-  position: relative;
   min-height: 100vh;
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
 }
 
 .service-container{
-  background-color: red;
+  /* background-color: red; */
   width: 100%;
   height: 40vw;
   margin-top: 1rem;
+}
+
+.services{
+  width: 300px;
+  height: 200px;
+  background-color: green;
+
 }
