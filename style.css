@@ -8,14 +8,15 @@
   src: url("font/hkgrotesk-bold-webfont.ttf");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --background-color: #fff;
   --secondary-color: #00c3ff;
-  --accent-color: #FF0000;
+  --accent-color: #ff0000;
   --fontFade-color: #212121;
+  --border-color: #00000022;
 }
 
 * {
@@ -27,15 +28,27 @@
   font-family: "Work Sans", sans-serif;
 }
 
+button.btn {
+  width: 170px;
+  height: 50px;
+  border-radius: 2rem;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 body {
   width: 100%;
   height: 100%;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
-
 
 #main {
   width: 100%;
@@ -47,28 +60,29 @@ section {
   min-height: 100vh;
 }
 
-
 .navigation-bar {
   width: 100%;
-  height: 82px;
+  height: 100px;
+  background-color: var(--background-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 9rem;
- position: sticky;
- top: 0;
+  padding: 0 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .logo {
-  width: 10rem;
-  height: 3rem;
+  width: 12rem;
+  height: 4rem;
 }
 
-.logo img{
+.logo img {
   height: 100%;
 }
 
-.btn-container{
+.btn-container {
   width: 90px;
   height: 50px;
   padding: 10px 5px;
@@ -84,72 +98,175 @@ section {
   background-color: #21212108;
 }
 
-
-.btn-container i{
+.btn-container i {
   padding: 5px;
   font-size: 1.9rem;
 }
 
-.hero{
-  width:100%;
-  height:41vw;
-  background: url('Asset/c72af10b.mp4');
+.hero {
+  width: 100%;
+  height: 51vw;
+  background: url("Asset/c72af10b.mp4");
   background-size: cover;
   background-position: 0% 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   position: relative;
 }
 
-.hero video{
+.hero video {
   width: 100%;
   height: 100%;
   position: absolute;
   object-fit: cover;
 }
 
-.slogan{
-  font-size: 3rem;
-  color: var(--background-color);
+.book-service-btn {
   z-index: 1;
-  text-shadow: 10px 10px 30px #000;
+  transition: all 0.3s;
 }
 
-.feature-txt{
+.book-service-btn:hover {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border: 2px solid var(--background-color);
+}
+
+.slogan {
+  font-size: 5rem;
+  color: var(--background-color);
+  text-shadow: 0px 0px 10px #000;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.feature-txt {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 1.8rem;
   color: var(--fontFade-color);
   font-weight: 700;
   font-stretch: 2rem;
   letter-spacing: -1px;
-
 }
-.service-txt{
+.service-txt {
   font-weight: 100;
+  font-size: 3rem;
   text-align: center;
   margin-top: 0.8rem;
   color: #333;
 }
 
-.service-section{
+.service-section {
   background-color: var(--background-color);
   opacity: 1;
   min-height: 100vh;
   /* padding-top: 3rem; */
 }
 
-.service-container{
+.service-container {
   /* background-color: red; */
   width: 100%;
-  height: 40vw;
+  height: 25vw;
+  padding: 0 90px;
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.services{
-  width: 300px;
-  height: 200px;
-  background-color: green;
+.services {
+  width: 250px;
+  height: 150px;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+  text-align: center;
+}
 
+.services img {
+  height: 60%;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  padding: 10px 40px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.services h4 {
+  font-weight: 100;
+}
+
+.about-us {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-pic-container {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.img1 {
+  background: url("Asset/services/house-cleaning-service-min-1600x1068.jpg");
+  background-position: 20%;
+  background-size: cover;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 420px;
+  height: 580px;
+  border-radius: 1rem;
+}
+.img2 {
+  background: url("Asset/services/man-servant-cleaning-house.jpg");
+  background-position: 80%;
+  background-size: cover;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  width: 400px;
+  height: 450px;
+  border-radius: 1rem;
+}
+
+.about-info {
+  width: 50%;
+  height: 100%;
+  padding: 0 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about-info h4{
+  margin-bottom:3rem;
+  font-weight: 700;
+  color: var(--fontFade-color);
+  letter-spacing: 0.2rem;
+}
+
+.about-info h1{
+  font-size: 4rem;
+  margin-bottom:3rem;
+  line-height: 4rem;
+  color: var(--fontFade-color);
+}
+
+.about-info p{
+  margin-bottom:2rem;
+  font-weight: 100;
+  color: var(--fontFade-color);
+  line-height: 1.3rem;
 }
