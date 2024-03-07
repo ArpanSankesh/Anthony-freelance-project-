@@ -163,7 +163,6 @@ section {
   background-color: var(--background-color);
   opacity: 1;
   min-height: 100vh;
-  /* padding-top: 3rem; */
 }
 
 .service-container {
@@ -269,4 +268,19 @@ section {
   font-weight: 100;
   color: var(--fontFade-color);
   line-height: 1.3rem;
+}
+
+.about-us-btn:hover{
+
+}
+
+.book-service-btn {
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.about-us-btn:hover {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
