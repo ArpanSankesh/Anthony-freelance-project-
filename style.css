@@ -164,7 +164,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 3rem 0;
+  /* margin: 3rem 0; */
+  background-color: #21212108;
 }
 
 .about-pic-container {
@@ -269,7 +270,8 @@ section {
   opacity: 1;
   min-height: 100vh;
   padding: 4rem 3rem;
-  background-color: #21212108;
+  margin-bottom: 3rem;
+  /* background-color: #21212108; */
 }
 
 .service-section h1 {
@@ -329,6 +331,49 @@ section {
   font-size: 1.2rem;
 }
 
+.showcase {
+  width: 100%;
+  height: 100vh;
+}
+
+.show-background {
+  width: 100%;
+  height: 85vh;
+  background-image: url("Asset/services/image-10-copyright.jpg");
+  background-position: 60%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4rem;
+  gap: 2rem;
+  position: relative;
+}
+
+.filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #0000004f;
+}
+
+.show-background h4 {
+  color: #fff;
+  font-size: 1rem;
+  z-index: 1;
+}
+.show-background h1 {
+  color: #fff;
+  font-size: 4rem;
+  z-index: 1;
+}
+
+.about-us-btn {
+  z-index: 1;
+}
+
 @media (max-width: 1050px) {
   .hero {
     height: 45rem;
@@ -355,6 +400,10 @@ section {
 
   .service-section {
     padding: 4rem 0rem;
+    min-height: 70vh;
+  }
+  .service-container {
+    padding: 2rem 0;
   }
 
   .nav-main {
@@ -367,5 +416,15 @@ section {
 
   .about-info {
     padding: 0 2rem;
+  }
+
+  .show-background {
+    height: 40vh;
+    background-position: 60%;
+  }
+  .show-background h1 {
+    color: #fff;
+    font-size: 3rem;
+    z-index: 1;
   }
 }
