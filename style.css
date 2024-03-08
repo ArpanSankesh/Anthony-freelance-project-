@@ -80,7 +80,7 @@ section {
   height: 100%;
 }
 
-.nav-main{
+.nav-main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,17 +88,15 @@ section {
   gap: 3rem;
 }
 
-.nav-main a{
+.nav-main a {
   text-decoration: none;
   color: var(--fontFade-color);
   padding-bottom: 8px;
 }
 
-.nav-main a:hover{
+.nav-main a:hover {
   border-bottom: 2px solid var(--secondary-color);
-
 }
-
 
 .btn-container {
   display: flex;
@@ -111,7 +109,7 @@ section {
   padding: 5px;
   font-size: 2rem;
 }
-.btn-container i:nth-child(2){
+.btn-container i:nth-child(2) {
   display: none;
   margin-left: 20px;
 }
@@ -130,7 +128,7 @@ section {
   padding: 10vh;
 }
 
-.hero video{
+.hero video {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -148,23 +146,13 @@ section {
   border: 2px solid var(--background-color);
 }
 
-.slogan {
+.feature-txt {
   font-size: 5vw;
   color: var(--background-color);
   text-shadow: 0px 0px 1px #000;
   z-index: 1;
   margin-bottom: 1.5rem;
   text-align: center;
-}
-
-.feature-txt {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 1.8rem;
-  color: var(--fontFade-color);
-  font-weight: 700;
-  font-stretch: 2rem;
-  letter-spacing: -1px;
 }
 
 /* <------------------ABOUT US SECTION----------------> */
@@ -188,7 +176,6 @@ section {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  
 }
 
 .img1 {
@@ -200,51 +187,38 @@ section {
   border-radius: 0.5rem;
 }
 
-.small-images-container{
+.small-images-container {
   position: relative;
   height: 120px;
   width: 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
-.small-images{
+.small-images {
   width: calc(480px / 3);
   height: 100%;
   border-radius: 0.5rem;
   cursor: pointer;
 }
 
-.small-images-1{
-  background: url('Asset/services/man-servant-cleaning-house.jpg');
-  background-size: cover;
-  background-position: 0px 30%;
-}
-
-.small-images-2{
-  background: url('Asset/services/pexels-karolina-grabowska-4239125.jpg');
-  background-size: cover;
-  background-position: 0px 30%;
-}
-
-.small-images-3{
-  background: url('Asset/services/service\ img\ showcase\ 2.jpg');
-  background-size: cover;
-}
-  
-  /* .img2 {
+.small-images-1 {
   background: url("Asset/services/man-servant-cleaning-house.jpg");
-  background-position: 80%;
   background-size: cover;
-  position: absolute;
-  top: 40%;
-  left: 45%;
-  width: 400px;
-  height: 450px;
-  border-radius: 1rem;
-} */
+  background-position: 0px 30%;
+}
+
+.small-images-2 {
+  background: url("Asset/services/pexels-karolina-grabowska-4239125.jpg");
+  background-size: cover;
+  background-position: 0px 30%;
+}
+
+.small-images-3 {
+  background: url("Asset/services/service\ img\ showcase\ 2.jpg");
+  background-size: cover;
+}
 
 .about-info {
   width: 50%;
@@ -308,7 +282,7 @@ section {
   position: relative;
 }
 
-.service-section h1::after{
+.service-section h1::after {
   content: "";
   width: 200px;
   height: 3px;
@@ -321,7 +295,7 @@ section {
 
 .service-container {
   width: 100%;
-  padding-top: 3rem;
+  padding: 3rem 4rem 0 4rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -329,7 +303,7 @@ section {
 }
 
 .services {
-  width: 240px;
+  width: 280px;
   height: 200px;
   padding: 0 3rem;
   margin-bottom: 1rem;
@@ -355,48 +329,43 @@ section {
   font-size: 1.2rem;
 }
 
-
-
-
-@media (max-width:1050px) {
-  .hero{
+@media (max-width: 1050px) {
+  .hero {
     height: 45rem;
   }
   .about-us {
     height: 60vh;
   }
- 
-.img1 {
-  width: 450px;
-  height: 550px;
-  background-position: 30%;
-}
 
-.small-images{
-  width: calc(440px / 3);
-  height: 100%;
-  border-radius: 0.5rem;
-}
+  .img1 {
+    width: 450px;
+    height: 550px;
+    background-position: 30%;
+  }
 
-.small-images-container{
-  width: 450px;
+  .small-images {
+    width: calc(440px / 3);
+    height: 100%;
+    border-radius: 0.5rem;
+  }
 
-}
+  .small-images-container {
+    width: 450px;
+  }
 
-.service-section {
-  padding: 4rem 0rem;
-}
+  .service-section {
+    padding: 4rem 0rem;
+  }
 
-.nav-main{
-  display: none;
-}
+  .nav-main {
+    display: none;
+  }
 
-.btn-container i:nth-child(2){
-  display: inline-block;
-}
+  .btn-container i:nth-child(2) {
+    display: inline-block;
+  }
 
-.about-info {
-  padding: 0 2rem;
-}
-
+  .about-info {
+    padding: 0 2rem;
+  }
 }
