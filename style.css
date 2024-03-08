@@ -221,9 +221,9 @@ section {
 }
 
 .about-info h1 {
-  font-size: 4rem;
+  font-size: 5vw;
   margin-bottom: 3rem;
-  line-height: 4rem;
+  line-height: 5vw;
   color: var(--fontFade-color);
 }
 
@@ -257,7 +257,7 @@ section {
 
 .service-section h1 {
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 3vh;
   text-align: center;
   margin-top: 0.8rem;
   color: #333;
@@ -315,6 +315,19 @@ section {
 
 
 
-@media (max-width:999px) {
-  
+@media (max-width:1050px) {
+  .hero{
+    height: 45rem;
+  }
+  .about-us {
+    height: 60vh;
+  }
+  .img1 {
+    width: 320px;
+    height: 480px;
+}
+.img2 {
+  width: 300px;
+  height: 350px;
+}
 }
