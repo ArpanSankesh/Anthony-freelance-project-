@@ -26,6 +26,7 @@
   font-family: "hkgrotesk";
   font-family: "Karla", sans-serif;
   font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 button.btn {
@@ -57,7 +58,7 @@ body::-webkit-scrollbar {
 
 section {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .navigation-bar {
@@ -68,9 +69,6 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 0 5rem;
-  /* position: sticky;
-  top: 0;
-  z-index: 999; */
 }
 
 .logo {
@@ -82,20 +80,31 @@ section {
   height: 100%;
 }
 
+.nav-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  gap: 3rem;
+}
+
+.nav-main a{
+  text-decoration: none;
+  color: var(--fontFade-color);
+  padding-bottom: 8px;
+}
+
+.nav-main a:hover{
+  border-bottom: 2px solid var(--secondary-color);
+
+}
+
+
 .btn-container {
-  width: 90px;
-  height: 50px;
-  padding: 10px 5px;
-  border-radius: 2rem;
-  border: 1px solid #3333334e;
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-}
-
-.btn-container:hover {
-  background-color: #21212108;
 }
 
 .btn-container i {
@@ -116,7 +125,7 @@ section {
   position: relative;
 }
 
-.hero video {
+.hero video{
   width: 100%;
   height: 100%;
   position: absolute;
@@ -135,7 +144,7 @@ section {
 }
 
 .slogan {
-  font-size: 5rem;
+  font-size: 5vw;
   color: var(--background-color);
   text-shadow: 0px 0px 1px #000;
   z-index: 1;
@@ -161,6 +170,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 3rem 0;
 }
 
 .about-pic-container {
@@ -180,6 +190,7 @@ section {
   height: 580px;
   border-radius: 1rem;
 }
+
 .img2 {
   background: url("Asset/services/man-servant-cleaning-house.jpg");
   background-position: 80%;
@@ -195,7 +206,7 @@ section {
 .about-info {
   width: 50%;
   height: 100%;
-  padding: 0 5rem;
+  padding: 0 3rem 0 5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -217,7 +228,7 @@ section {
 }
 
 .about-info p {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   font-weight: 100;
   color: var(--fontFade-color);
   line-height: 1.3rem;
@@ -253,7 +264,6 @@ section {
   margin: 3rem 0;
   position: relative;
 }
-
 
 .service-section h1::after{
   content: "";
@@ -300,4 +310,11 @@ section {
 .services h4 {
   font-weight: 100;
   font-size: 1.2rem;
+}
+
+
+
+
+@media (max-width:999px) {
+  
 }
