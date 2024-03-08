@@ -109,7 +109,11 @@ section {
 
 .btn-container i {
   padding: 5px;
-  font-size: 1.9rem;
+  font-size: 2rem;
+}
+.btn-container i:nth-child(2){
+  display: none;
+  margin-left: 20px;
 }
 
 .hero {
@@ -177,6 +181,7 @@ section {
   width: 50%;
   height: 100%;
   position: relative;
+  
 }
 
 .img1 {
@@ -184,14 +189,15 @@ section {
   background-position: 20%;
   background-size: cover;
   position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 420px;
-  height: 580px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 550px;
   border-radius: 1rem;
 }
 
-.img2 {
+/* .img2 {
   background: url("Asset/services/man-servant-cleaning-house.jpg");
   background-position: 80%;
   background-size: cover;
@@ -201,7 +207,7 @@ section {
   width: 400px;
   height: 450px;
   border-radius: 1rem;
-}
+} */
 
 .about-info {
   width: 50%;
@@ -322,12 +328,23 @@ section {
   .about-us {
     height: 60vh;
   }
-  .img1 {
-    width: 320px;
-    height: 480px;
+ 
+.img1 {
+  width: 450px;
+  height: 550px;
+  background-position: 30%;
 }
-.img2 {
-  width: 300px;
-  height: 350px;
+
+.service-section {
+  padding: 4rem 0rem;
 }
+
+.nav-main{
+  display: none;
+}
+
+.btn-container i:nth-child(2){
+  display: inline-block;
+}
+
 }
