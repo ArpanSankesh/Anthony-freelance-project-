@@ -147,7 +147,7 @@ section {
 }
 
 .feature-txt {
-  font-size: 5vw;
+  font-size: 5rem;
   color: var(--background-color);
   text-shadow: 0px 0px 1px #000;
   z-index: 1;
@@ -374,6 +374,8 @@ section {
   z-index: 1;
 }
 
+/* -------------------TABLET-------------------- */
+
 @media (max-width: 1050px) {
   .navigation-bar {
     padding: 0 3rem;
@@ -386,6 +388,10 @@ section {
 
   .hero {
     height: 45rem;
+    padding: 6vh;
+  }
+  .feature-txt {
+    font-size: 3.3rem;
   }
   .about-us {
     height: 60vh;
@@ -438,16 +444,71 @@ section {
   }
 }
 
+/* ----------------PHONE----------------------- */
+
 @media (max-width: 400px) {
   .logo {
     width: 10rem;
-    height: 2rem;
+    height: 1.7rem;
   }
   .navigation-bar {
     padding: 0 1rem;
-    height: 60px;
-}
-.hero {
-  height: 45rem;
-}
+    height: 50px;
+  }
+
+  .btn-container i {
+    padding: 1px;
+    font-size: 1.3rem;
+  }
+  .btn-container i:nth-child(2) {
+    margin-left: 10px;
+  }
+
+  .hero {
+    height: 22rem;
+  }
+
+  .hero {
+    padding: 2.5vh;
+  }
+
+  .feature-txt {
+    font-size: 1.5rem;
+  }
+
+  button.btn {
+    width: 100px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .img1 {
+    height: 150px;
+    width: 90%;
+  }
+  .about-us {
+    flex-direction: column-reverse;
+    padding-top: 3rem;
+  }
+  .about-pic-container {
+    width: 100%;
+  }
+  .about-info {
+    width: 100%;
+  }
+  .about-info h4 {
+    margin-bottom: 1rem;
+    font-size: 0.5rem;
+  }
+  .about-info h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 4.3vh;
+  }
+  .about-info p {
+    margin-bottom: 1rem;
+    font-size: 0.5rem;
+    line-height: 1.5vh;
+  }
+  
 }
