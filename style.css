@@ -376,7 +376,7 @@ section {
 
 /* -------------------TABLET-------------------- */
 
-@media (max-width: 1050px) {
+@media (max-width: 1030px) {
   .navigation-bar {
     padding: 0 3rem;
   }
@@ -420,6 +420,9 @@ section {
   .service-container {
     padding: 2rem 0;
   }
+  .service-section h1 {
+    font-size: 5.5vh;
+}
 
   .nav-main {
     display: none;
@@ -445,6 +448,29 @@ section {
     font-size: 3rem;
     z-index: 1;
   }
+}
+
+@media (max-width:900px) {
+  .img1 {
+    width: 330px;
+    height: 450px;
+    background-position: 30%;
+}
+.about-info h4 {
+  margin-bottom: 1.5rem;
+}
+.about-info h1 {
+  margin-bottom: 1.5rem;
+}
+.about-info p {
+  margin-bottom: 2rem;
+}
+.services {
+  width: 200px;
+  height: 200px;
+  padding: 0 1rem;
+  
+}
 }
 
 /* ----------------PHONE----------------------- */
@@ -486,8 +512,9 @@ section {
   }
 
   .img1 {
-    height: 150px;
-    width: 90%;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
   }
   .about-us {
     flex-direction: column-reverse;
@@ -504,23 +531,25 @@ section {
     width: 100%;
   }
   .about-info h4 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     font-size: 0.5rem;
     letter-spacing: 0.1rem;
   }
 
   .about-info h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 2rem;
-    line-height: 4.3vh;
+    line-height: 1.9rem;
   }
   .about-info p {
     margin-bottom: 1rem;
-    font-size: 0.5rem;
-    line-height: 1.5vh;
+    font-size: 0.65rem;
+    line-height: 0.8rem;
   }
   .service-section {
     padding: 1rem 0;
+    margin: 1rem 0 0 0 ;
+    min-height: 63vh
   }
   .service-section h1 {
     font-size: 4vh;
@@ -546,4 +575,19 @@ section {
   .services img {
     padding: 10px 20px;
   }
+  .show-background {
+    height: 40vh;
+    background-image: url("Asset/services/image-10-copyright.jpg");
+    background-position: 60%;
+    padding: 1rem;   
+    gap: 1rem;
+}
+.show-background h4 {
+  font-size: .7rem;
+  font-weight: 700;
+}
+.show-background h1 {
+  font-size: 1.5rem;
+}
+
 }
