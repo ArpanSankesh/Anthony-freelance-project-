@@ -297,7 +297,7 @@ section {
 
 .service-container {
   width: 100%;
-  padding: 3rem 4rem 0 4rem;
+  padding: 3rem 1rem 0 1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -333,7 +333,7 @@ section {
 
 .showcase {
   width: 100%;
-  height: 100vh;
+  height: 85vh;
 }
 
 .show-background {
@@ -372,6 +372,59 @@ section {
 
 .about-us-btn {
   z-index: 1;
+}
+
+.contact{
+  width: 100%;
+  min-height: 50vh;
+  /* background-color: yellow; */
+  padding: 5rem 0rem;
+}
+
+.contact-left{
+  width: 50%;
+  height: 100%;
+}
+.contact-info {
+  width: 50%;
+  height: 100%;
+  padding: 0 0rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contact-info h4 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: var(--fontFade-color);
+  letter-spacing: 0.2rem;
+}
+
+.contact-info h1 {
+  font-size: 5vw;
+  margin-bottom: 3rem;
+  line-height: 5vw;
+  color: var(--fontFade-color);
+}
+
+.contact-info p {
+  margin-bottom: 4rem;
+  font-weight: 100;
+  color: var(--fontFade-color);
+  line-height: 1.3rem;
+}
+
+.book-service-btn {
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.about-us-btn:hover {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
 
 /* -------------------TABLET-------------------- */
@@ -439,18 +492,25 @@ section {
   .about-us{
     min-height: 50vh ;
   }
+  .showcase {
+    width: 100%;
+    height: 45vh;
+}
   .show-background {
-    height: 40vh;
+    height: 45vh;
     background-position: 60%;
   }
   .show-background h1 {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2.8rem;
     z-index: 1;
   }
 }
 
 @media (max-width:900px) {
+  .navigation-bar{
+    height: 60px;
+  }
   .img1 {
     width: 330px;
     height: 450px;
@@ -470,6 +530,21 @@ section {
   height: 200px;
   padding: 0 1rem;
   
+}
+.contact-info{
+  padding: 0 0 0 3rem;
+}
+.contact-info h4 {
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+}
+.contact-info h1 {
+  font-size: 4vw;
+  margin-bottom: 1.5rem;
+}
+.contact-info p {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
 }
 }
 
