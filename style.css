@@ -439,7 +439,7 @@ section {
 }
 
 .contact-form form .input {
-  width: 70%;
+  width: 85%;
   height: 60px;
   border: none;
   border-bottom: 1px solid var(--border-color);
@@ -452,7 +452,7 @@ section {
 }
 
 .contact-form form .textarea {
-  width: 70%;
+  width: 85%;
   height: 200px;
   border: none;
   border-bottom: 1px solid var(--border-color);
@@ -463,6 +463,62 @@ section {
   border-radius: 1rem;
   padding: 2rem;
 }
+
+footer{
+  width: 100%;
+  height: 40vh;
+  background-color: var(--fontFade-color);
+  padding: 3rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.logo2{
+  width: 200px;
+  height: 60px;
+  margin-left: 3rem;
+}
+.logo2 img{
+  height: 100%;
+}
+.footer-content{
+  width: 60%;
+  padding: 0 4rem 0 0;
+}
+
+.footer-content h1{
+  color: var(--background-color);
+  font-size: 3rem;
+}
+.footer-menu{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: var(--secondary-color);
+  margin-top: 5rem;
+  padding-right: 5rem;
+}
+
+.col-1{
+display: flex;
+gap: 1rem;
+}
+
+.col-1 a{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.col-1 h3{
+  padding-bottom: 0.5rem;
+}
+
+.col-1 h3:hover{
+  border-bottom: 2px solid var(--secondary-color);
+}
+
 
 /* -------------------TABLET-------------------- */
 
@@ -598,6 +654,9 @@ section {
     font-size: 0.8rem;
     line-height: 1.1rem;
   }
+  .contact-info {
+    padding: 0 0 0 4rem;
+}
 }
 
 /* ----------------PHONE----------------------- */
@@ -716,4 +775,33 @@ section {
   .show-background h1 {
     font-size: 1.5rem;
   }
+  .contact {
+    min-height: 50vh;
+    padding: 1rem 0rem;
+}
+.contact-form form {
+  gap: 1rem;
+}
+.contact-form form .input {
+  height: 40px;
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+}
+.contact-form form .textarea {
+  padding: 1rem;
+  font-size: 0.7rem;
+  height: 100px;
+}
+.contact-info h4 {
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.1rem;
+  font-size: 0.6rem;
+}
+.contact-info {
+  padding: 0 2rem;
+}
+.contact-info h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
 }
