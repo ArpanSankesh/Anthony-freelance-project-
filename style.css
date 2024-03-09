@@ -463,6 +463,14 @@ section {
   border-radius: 1rem;
   padding: 2rem;
 }
+.submit-btn{
+  transition: all 0.3s;
+}
+.submit-btn:hover{
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
 
 footer{
   width: 100%;
@@ -517,6 +525,10 @@ gap: 1rem;
 
 .col-1 h3:hover{
   border-bottom: 2px solid var(--secondary-color);
+}
+
+.col-2 h4{
+  margin-bottom: 1vh;
 }
 
 
@@ -828,7 +840,7 @@ gap: 1rem;
   line-height: 2rem;
 }
 footer {
-  height: 20vh;
+  height: 25vh;
   padding: 1rem;
 }
 .logo2 {
