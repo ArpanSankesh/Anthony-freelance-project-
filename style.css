@@ -376,19 +376,18 @@ section {
 
 .contact{
   width: 100%;
-  min-height: 50vh;
+  min-height: 100vh;
   /* background-color: yellow; */
+  display: flex;
+  
   padding: 5rem 0rem;
 }
 
-.contact-left{
-  width: 50%;
-  height: 100%;
-}
+
 .contact-info {
   width: 50%;
   height: 100%;
-  padding: 0 0rem 0 5rem;
+  padding: 0 0 0 5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
