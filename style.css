@@ -374,15 +374,14 @@ section {
   z-index: 1;
 }
 
-.contact{
+.contact {
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   /* background-color: yellow; */
   display: flex;
-  
+
   padding: 5rem 0rem;
 }
-
 
 .contact-info {
   width: 50%;
@@ -424,6 +423,45 @@ section {
   background-color: var(--background-color);
   color: var(--accent-color);
   border: 2px solid var(--accent-color);
+}
+
+.contact-form {
+  width: 50%;
+  height: 100%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.contact-form form .input {
+  width: 70%;
+  height: 60px;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  outline: none;
+  font-size: 1rem;
+  color: #212121;
+  background-color: var(--border-color);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.contact-form form .textarea {
+  width: 70%;
+  height: 200px;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  outline: none;
+  font-size: 1rem;
+  color: #212121;
+  background-color: var(--border-color);
+  border-radius: 1rem;
+  padding: 2rem;
 }
 
 /* -------------------TABLET-------------------- */
@@ -474,7 +512,7 @@ section {
   }
   .service-section h1 {
     font-size: 5.5vh;
-}
+  }
 
   .nav-main {
     display: none;
@@ -488,13 +526,13 @@ section {
     padding: 0 2rem;
   }
 
-  .about-us{
-    min-height: 50vh ;
+  .about-us {
+    min-height: 50vh;
   }
   .showcase {
     width: 100%;
     height: 45vh;
-}
+  }
   .show-background {
     height: 45vh;
     background-position: 60%;
@@ -504,47 +542,62 @@ section {
     font-size: 2.8rem;
     z-index: 1;
   }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form form .input {
+    width: 85%;
+  }
+  .contact-form form .textarea {
+    width: 85%;
+  }
 }
 
-@media (max-width:900px) {
-  .navigation-bar{
+@media (max-width: 900px) {
+  .navigation-bar {
     height: 60px;
   }
   .img1 {
     width: 330px;
     height: 450px;
     background-position: 30%;
-}
-.about-info h4 {
-  margin-bottom: 1.5rem;
-}
-.about-info h1 {
-  margin-bottom: 1.5rem;
-}
-.about-info p {
-  margin-bottom: 2rem;
-}
-.services {
-  width: 200px;
-  height: 200px;
-  padding: 0 1rem;
-  
-}
-.contact-info{
-  padding: 0 0 0 3rem;
-}
-.contact-info h4 {
-  margin-bottom: 1rem;
-  font-size: 0.7rem;
-}
-.contact-info h1 {
-  font-size: 4vw;
-  margin-bottom: 1.5rem;
-}
-.contact-info p {
-  font-size: 0.8rem;
-  line-height: 1.1rem;
-}
+  }
+  .about-info h4 {
+    margin-bottom: 1.5rem;
+  }
+  .about-info h1 {
+    margin-bottom: 1.5rem;
+  }
+  .about-info p {
+    margin-bottom: 2rem;
+  }
+  .services {
+    width: 200px;
+    height: 200px;
+    padding: 0 1rem;
+  }
+  .contact-info {
+    padding: 0 0 0 3rem;
+  }
+  .contact-info h4 {
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+  }
+  .contact-info h1 {
+    font-size: 4vw;
+    margin-bottom: 1.5rem;
+  }
+  .contact-info p {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
 }
 
 /* ----------------PHONE----------------------- */
@@ -622,8 +675,8 @@ section {
   }
   .service-section {
     padding: 1rem 0;
-    margin: 1rem 0 0 0 ;
-    min-height: 63vh
+    margin: 1rem 0 0 0;
+    min-height: 63vh;
   }
   .service-section h1 {
     font-size: 4vh;
@@ -653,15 +706,14 @@ section {
     height: 40vh;
     background-image: url("Asset/services/image-10-copyright.jpg");
     background-position: 60%;
-    padding: 1rem;   
+    padding: 1rem;
     gap: 1rem;
-}
-.show-background h4 {
-  font-size: .7rem;
-  font-weight: 700;
-}
-.show-background h1 {
-  font-size: 1.5rem;
-}
-
+  }
+  .show-background h4 {
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+  .show-background h1 {
+    font-size: 1.5rem;
+  }
 }
