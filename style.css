@@ -533,7 +533,28 @@ gap: 1rem;
 
 /* ------------------------------ABOUT_US PAGE-------------------------------- */
 
+.about-pg-content{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #21212108;
+  /* background-color: red; */
+}
 
+.about-txt-container{
+  background-color: #21212108;
+  text-align: center;
+  padding: 5rem 0 0rem 0;
+}
+
+.about-txt-container h1{
+  font-size: 3rem;
+  font-weight: 900;
+}
+.about-txt-container i{
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
 
 /* -------------------TABLET-------------------- */
 
