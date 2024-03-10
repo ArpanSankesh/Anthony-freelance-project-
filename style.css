@@ -15,7 +15,8 @@
   --background-color: #fff;
   --secondary-color: #00c3ff;
   --accent-color: #ff0000;
-  --fontFade-color: #212121;
+  /* --fontFade-color: #212121; */
+  --fontFade-color: #131B3A;
   --border-color: #00000022;
 }
 
@@ -549,12 +550,19 @@ gap: 1rem;
 .about-txt-container h1{
   font-size: 3rem;
   font-weight: 900;
+  color: var(--fontFade-color);
 }
 .about-txt-container i{
   font-size: 2rem;
   margin-top: 1rem;
   font-weight: 600;
+  color: var(--fontFade-color);
 }
+
+.bullet-para p{
+  margin-bottom: 1rem;
+}
+
 
 /* -------------------TABLET-------------------- */
 
