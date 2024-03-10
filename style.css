@@ -563,6 +563,27 @@ gap: 1rem;
   margin-bottom: 1rem;
 }
 
+.our-process{
+  width: 100%;
+  min-height: 100vh;
+  background-color:  #21212108;
+}
+
+.process-left{
+  background-color: red;
+  width: 50%;
+  height: 100%;
+}
+.process-right{
+  background-color: red;
+  width: 50%;
+  height: 100%;
+}
+
+.process{
+  flex-direction: row-reverse;
+}
+
 
 /* -------------------TABLET-------------------- */
 
