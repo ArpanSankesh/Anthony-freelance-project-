@@ -534,55 +534,8 @@ gap: 1rem;
 
 /* ------------------------------ABOUT_US PAGE-------------------------------- */
 
-.about-pg-content{
-  width: 100%;
-  min-height: 100vh;
-  background-color: #21212108;
-  /* background-color: red; */
-}
 
-.about-txt-container{
-  background-color: #21212108;
-  text-align: center;
-  padding: 5rem 0 0rem 0;
-}
 
-.about-txt-container h1{
-  font-size: 3rem;
-  font-weight: 900;
-  color: var(--fontFade-color);
-}
-.about-txt-container i{
-  font-size: 2rem;
-  margin-top: 1rem;
-  font-weight: 600;
-  color: var(--fontFade-color);
-}
-
-.bullet-para p{
-  margin-bottom: 1rem;
-}
-
-.our-process{
-  width: 100%;
-  min-height: 100vh;
-  background-color:  #21212108;
-}
-
-.process-left{
-  background-color: red;
-  width: 50%;
-  height: 100%;
-}
-.process-right{
-  background-color: red;
-  width: 50%;
-  height: 100%;
-}
-
-.process{
-  flex-direction: row-reverse;
-}
 
 
 /* -------------------TABLET-------------------- */
