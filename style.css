@@ -1289,9 +1289,6 @@ footer {
 
 @media (max-width:300px) {
   
-footer{
-  display: none;
-}
 .about-right h1 {
   margin-bottom: 1rem;
 }
@@ -1334,5 +1331,20 @@ footer{
 }
 .contact-info h4 {
   font-size: 0.5rem;
+}
+.logo2 {
+  height: 15px;
+}
+.footer-content h1 {
+  font-size: 0.8rem;
+}
+.col-1 h3 {
+  font-size: 0.5rem;
+}
+.col-2 h3 {
+  font-size: 0.4rem;
+}
+.col-2 h4 {
+  font-size: 0.6rem;
 }
 }
