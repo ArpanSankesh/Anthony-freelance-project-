@@ -678,6 +678,7 @@ footer {
 
 .step1-img {
   background-image: url(Asset/services/Home\ cleaning\ service\,\ business.jpeg);
+  background-size: cover;
   width: 80%;
   height: 60%;
   border-radius: 1rem;
@@ -927,6 +928,37 @@ footer {
     gap: 0.5rem;
     flex-direction: column;
   }
+  .heading h1 {
+    font-size: 3rem;
+}
+.about-right {
+  padding: 0 1rem;
+}
+.about-right h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.about-right h4 {
+  font-size: 0.8rem;
+}
+.process-left h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.steps-info p {
+  font-size: 0.8rem;
+}
+.steps-img {
+  width: 50px;
+  height: 50px;
+}
+.process-steps-right {
+  padding: 2rem ;
+}
+.process-steps-right h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
 }
 
 /* ----------------PHONE----------------------- */
@@ -1105,4 +1137,37 @@ footer {
   .col-1 {
     gap: 0;
   }
+  .about-section-pg-content {
+    flex-direction: column-reverse;
+    gap: 3rem;
+}
+.process-section-pg-content {
+  padding: 0;
+}
+.about-left {
+  width: 100%;
+}
+.about-right {
+  width: 100%;
+}
+.process-section-pg-content {
+  display: flex;
+  flex-direction: column;
+}
+.process-left {
+  width: 100%;
+  padding: 2rem;
+}
+.process-right {
+  width: 100%;
+}
+.steps {
+  height: 10vh;
+}
+.steps-info h1 {
+  font-size: 1.5rem;
+}
+.steps-info p {
+  font-size: 0.6rem;
+}
 }
