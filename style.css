@@ -537,6 +537,7 @@ gap: 1rem;
 .about-section-pg{
   width: 100%;
   min-height: 100vh;
+  padding-bottom: 3rem;
 }
 
 .heading{
@@ -594,6 +595,43 @@ gap: 1rem;
   display: flex;
   gap: 10px;
   margin-bottom: 1rem;
+}
+
+.our-process{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #21212108;
+}
+
+.process-left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 5rem;
+  color: var(--fontFade-color);
+}
+
+.about-right{
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 6rem;
+  color: var(--fontFade-color);
+}
+
+.process-left h4{
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.process-left h1{
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  line-height: 3.5rem;
 }
 
 
