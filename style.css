@@ -601,6 +601,15 @@ gap: 1rem;
   width: 100%;
   min-height: 100vh;
   background-color: #21212108;
+
+}
+
+.process-section-pg-content{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  padding: 3rem 0 0 0 ;
+  color: var(--fontFade-color);
 }
 
 .process-left{
@@ -608,31 +617,49 @@ gap: 1rem;
   height: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   flex-direction: column;
   padding: 2rem 5rem;
-  color: var(--fontFade-color);
 }
 
-.about-right{
-  width: 50%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 6rem;
-  color: var(--fontFade-color);
-}
 
 .process-left h4{
   font-size: 1rem;
   margin-bottom: 1.5rem;
 }
+
 .process-left h1{
   font-size: 4rem;
   margin-bottom: 3rem;
   line-height: 3.5rem;
 }
+
+.process-right{
+  width: 50%;
+  height: 100%;
+}
+
+.steps {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.steps-img{
+  background-image: url(Asset/services/);
+  width: 100px;
+  height:100px ;
+  background-color: yellow;
+  border-radius: 50%;
+
+}
+.steps-info h1 {
+  font-size: 3rem;
+}
+
+
+
 
 
 
