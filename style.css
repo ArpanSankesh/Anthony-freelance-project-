@@ -733,6 +733,7 @@ footer {
 
 .step-2 {
   flex-direction: row-reverse;
+  background-color: #21212108;
 }
 
 /* -------------------TABLET-------------------- */
