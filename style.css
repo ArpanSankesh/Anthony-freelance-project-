@@ -760,20 +760,33 @@ footer {
 
 .service{
   width: 100%;
-  height: 100vh;
-  /* background-color: yellow; */
+  min-height: 80vh;
   padding: 5rem;
+}
+
+.service:nth-child(2n){
+  padding:  0 5rem;
 }
 .service-content{
   width: 100%;
   height: 100%;
   border: 2px solid var(--fontFade-color);
-  padding: 5rem 10rem;
+  padding: 5rem;
 }
-.service-content h4{
+.service-content h3{
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+.service-content p{
+  font-size: 1.2rem;
+}
+.service-btn-container{
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 
 /* -------------------TABLET-------------------- */
 
