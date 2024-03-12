@@ -272,7 +272,10 @@ section {
   min-height: 100vh;
   padding: 4rem 3rem;
   margin-bottom: 3rem;
-  /* background-color: #21212108; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-section h1 {
@@ -330,6 +333,9 @@ section {
 .services h4 {
   font-weight: 100;
   font-size: 1.2rem;
+}
+.service-btn{
+  margin-top: 3rem;
 }
 
 .showcase {
@@ -884,6 +890,9 @@ footer {
     width: 400px;
     height: 450px;
 }
+.service-btn {
+  margin-top: 1rem;
+}
 }
 
 @media (max-width: 900px) {
@@ -1051,11 +1060,12 @@ footer {
     margin-bottom: 1rem;
     font-size: 0.65rem;
     line-height: 0.8rem;
+    font-weight: 500;
   }
   .service-section {
     padding: 1rem 0;
     margin: 1rem 0 0 0;
-    min-height: 63vh;
+    min-height: 100vh;
   }
   .service-section h1 {
     font-size: 4vh;
@@ -1241,6 +1251,9 @@ footer {
   height: 200px;
   border-radius: 0;
 }
+.service-btn {
+  margin-top: 0rem;
+}
 }
 
 @media (max-width:380px) {
@@ -1285,6 +1298,9 @@ footer {
 .process-steps-right h1 {
   font-size: 1.5rem;
   line-height: 1.5rem;
+}
+.service-btn {
+  margin-top: 0rem;
 }
 }
 
