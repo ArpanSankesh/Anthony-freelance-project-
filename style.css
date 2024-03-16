@@ -43,8 +43,8 @@ button.btn {
   cursor: pointer;
 }
 
-.btn a:visited{
-  background-color: #4f0000;
+a{
+  z-index: 1;
 }
 
 body {
@@ -84,7 +84,6 @@ section {
 .logo img {
   height: 100%;
 }
-
 
 
 .nav-main {
@@ -143,7 +142,7 @@ section {
   object-fit: cover;
 }
 
-.book-service-btn {
+.book-service-btn{
   z-index: 1;
   transition: all 0.3s;
   width: 170px;
@@ -268,11 +267,6 @@ section {
   font-weight: 100;
   color: var(--fontFade-color);
   line-height: 1.3rem;
-}
-
-.book-service-btn {
-  z-index: 1;
-  transition: all 0.3s;
 }
 
 .about-us-btn:hover {
