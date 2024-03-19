@@ -828,6 +828,7 @@ footer {
 /* --------------------CART-------------------------- */
 
 .cart {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -864,5 +865,11 @@ footer {
   font-size: 1.075rem;
   margin: 1rem 0 0 0.7rem;
 }
-.cart-btn {
+#close-cart{
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: var(--background-color);
+  cursor:pointer;
 }
