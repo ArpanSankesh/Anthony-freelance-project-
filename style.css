@@ -43,7 +43,7 @@ button.btn {
   cursor: pointer;
 }
 
-a{
+a {
   z-index: 1;
 }
 
@@ -84,7 +84,6 @@ section {
 .logo img {
   height: 100%;
 }
-
 
 .nav-main {
   display: flex;
@@ -142,7 +141,7 @@ section {
   object-fit: cover;
 }
 
-.book-service-btn{
+.book-service-btn {
   z-index: 1;
   transition: all 0.3s;
   width: 170px;
@@ -345,7 +344,7 @@ section {
   font-weight: 100;
   font-size: 1.2rem;
 }
-.service-btn{
+.service-btn {
   margin-top: 3rem;
   width: 170px;
   height: 50px;
@@ -359,12 +358,11 @@ section {
   cursor: pointer;
 }
 
-.service-btn:hover{
+.service-btn:hover {
   background-color: var(--background-color);
   color: var(--accent-color);
   border: 2px solid var(--accent-color);
 }
-
 
 .showcase {
   width: 100%;
@@ -603,7 +601,7 @@ footer {
   justify-content: center;
 }
 
-.about-img{
+.about-img {
   background: url("Asset/services/Free\ Photo\ _\ Smiling\ woman\ cleaning\ glassware\ of\ cafeteria.jpeg");
   background-position: 20%;
   background-size: cover;
@@ -772,58 +770,99 @@ footer {
 
 /* --------------------Service-pg---------------------- */
 
-.service-pg{
+.service-pg {
   width: 100%;
 }
 
-.service-heading{
+.service-heading {
   padding-bottom: 2rem;
 }
 
-.intro{
+.intro {
   padding: 0 10rem;
   text-align: center;
   font-size: 1.2rem;
 }
 
-.service{
+.service {
   width: 100%;
   min-height: 50vh;
   padding: 5rem;
 }
 
-.service:nth-child(2n){
-  padding:  0 5rem;
+.service:nth-child(2n) {
+  padding: 0 5rem;
 }
 
-.service:nth-child(6){
-  padding:  0 5rem 5rem 5rem;
+.service:nth-child(6) {
+  padding: 0 5rem 5rem 5rem;
 }
 
-.service-content{
+.service-content {
   width: 100%;
   height: 100%;
   border: 2px solid var(--fontFade-color);
   padding: 5rem;
 }
 
-.service-content:nth-child(2){
+.service-content:nth-child(2) {
   background-color: #21212108;
 }
 
-.service-content h3{
+.service-content h3 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
-.service-content p{
+.service-content p {
   font-size: 1.2rem;
 }
 
-.service-btn-container{
+.service-btn-container {
   margin-top: 2rem;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
+/* --------------------CART-------------------------- */
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 360px;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: var(--fontFade-color);
+  box-shadow: -2px 0 4px #21212108;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: var(--background-color);
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--accent-color);
+  color: var(--background-color);
+}
+
+.total-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.total-price {
+  font-size: 1.075rem;
+  margin: 1rem 0 0 0.7rem;
+}
+.cart-btn {
+}
