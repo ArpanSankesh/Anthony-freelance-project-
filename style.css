@@ -903,7 +903,7 @@ footer {
   cursor: pointer;
 }
 .selector.active{
-  background-color: #00c3ff3e;
+  background-color: #00c3ff5d;
   border: 1px solid #00c3ff;
   color: #00c3ff;
 }
@@ -914,8 +914,15 @@ footer {
   border-radius: 0.5rem;
 }
 .service-selector.active{
-  background-color: #00c3ff3e;
+  background-color: #00c3ff5d;
   border: 1px solid #00c3ff;
   color: #00c3ff;
 }
-.fre
+.note{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  background-color: #33333324;
+}
