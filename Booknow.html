@@ -38,22 +38,25 @@
       <div class="booking-container">
         <div class="booking-right">
           <div class="details">
-            <!-- <h4 class="question">Details</h4> -->
-            <div class="row1">
-              <input type="text" class="name" placeholder="Full Name" required>
-            </div>
-            <div class="row2">
-              <input type="email" placeholder="Email">
-              <input type="number" placeholder="Ph. Number" required>
-            </div>
-            <div class="row1">
-              <input type="text" class="name" placeholder="Address" required>
-            </div>
-            <div class="row2">
-              <input type="email" placeholder="City">
-              <input type="number" placeholder="Postal code" required>
-            </div>
-            <button class="save-btn">Save info</button>
+            <form action="">
+
+              <!-- <h4 class="question">Details</h4> -->
+              <div class="row1">
+                <input type="text" class="name" placeholder="Full Name" required>
+              </div>
+              <div class="row2">
+                <input type="email" placeholder="Email">
+                <input type="number" placeholder="Ph. Number" required>
+              </div>
+              <div class="row1">
+                <input type="text" class="name" placeholder="Address" required>
+              </div>
+              <div class="row2">
+                <input type="email" placeholder="City">
+                <input type="number" placeholder="Postal code" required>
+              </div>
+              <button class="save-btn" type="submit">Save info</button>
+            </form>
           </div>
           <div class="details">
             <h4 class="question">1. Which service do you want?</h4>
@@ -97,9 +100,15 @@
               <div class="service-selector active">one time</div>
             </div>
           </div>
+          <div class="details">
+            <h4 class="question">5. When would you like your service?</h4>
+            <div class="select-box">
+              <input type="date" name="date-selector" class="date-selector">
+            </div>
+          </div>
          
           <div class="details">
-            <h4 class="question">5. Which service do you want?</h4>
+            <h4 class="question">6. What time would you like us to start?</h4>
             <div class="select-box">
               <div class="time-selector ">8:00 - 8-30</div>
               <div class="time-selector active">8:00 - 8:30</div>
@@ -130,7 +139,7 @@
             </div>
           </div>
           <div class="details">
-            <h4 class="question">6. Add ON's</h4>
+            <h4 class="question">7. Add ON's</h4>
             <div class="select-box">
               <div class="service-selector active">Cupboard Cleaning (+28 AED)</div>
               <div class="service-selector">Balcony cleaning (+38 AED)</div>
