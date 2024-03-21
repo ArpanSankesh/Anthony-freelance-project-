@@ -852,30 +852,6 @@ footer {
   border: 1px solid #2121211d;
   padding:2rem 2rem;
 }
-.booking-left{
-  width: 40%;
-  height:600px ;
-  /* background-color: blue; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.booking-info{
-  width: 100%;
-  height: 340px;
-  background-color: rgb(255, 255, 255); 
-  border-radius: 1rem;
-  border: 1px solid #2121211d;
-}
-.price{
-  width: 100%;
-  height: 240px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 1rem;
-  border: 1px solid #2121211d;
-}
 .details{
   width: 100%;
   min-height: 10vh;
@@ -993,4 +969,37 @@ footer {
   background-color: #21212108;
   border-radius: 0.5rem;
   font-size: 1.2rem;
+}
+.booking-left{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.booking-info{
+  width: 100%;
+  height: 400px;
+  background-color: rgb(255, 255, 255); 
+  border-radius: 1rem;
+  border: 1px solid #2121211d;
+  padding: 1rem ;
+}
+.price{
+  width: 100%;
+  height: 240px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  border: 1px solid #2121211d;
+}
+.info-container{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title{
+  margin-bottom: 1rem;
 }
