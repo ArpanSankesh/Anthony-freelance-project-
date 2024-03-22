@@ -21,28 +21,28 @@ const prices = {
   1: [98.88, 137.88, 176.88, 215.88, 254.88, 293.88, 332.88],
   2: [196.76, 274.76, 352.76, 430.76, 508.76, 586.76, 664.76],
   3: [294.64, 411.64, 528.64, 645.64, 762.64, 879.64, 996.64],
-  4: [392.52, 548.52, 704.52, 860.52, 1016.52, 1172.52, 1328.52]
+  4: [392.52, 548.52, 704.52, 860.52, 1016.52, 1172.52, 1328.52],
 };
 
-
 const calculateSubtotal = () => {
-    if (hours && workers) {
-      // Check if the selected number of workers and hours is within the defined range
-      if (workers >= 1 && workers <= 4 && hours >= 2 && hours <= 8) {
-        const pricePerWorker = prices[workers][hours - 2];
-        
-            const subtotal = pricePerWorker + (workers - 1); 
-        
-        subtotalElement.innerHTML = `AED ${subtotal.toFixed(2)}`;
-        console.log(subtotal);
-      } else {
-        subtotalElement.innerHTML = "AED 0.00"; 
-        console.log("Invalid number of workers or hours selected.");
-      }
+  if (hours && workers) {
+    if (workers >= 1 && workers <= 4 && hours >= 2 && hours <= 8) {
+      const pricePerWorker = prices[workers][hours - 2];
+
+      const subtotal = pricePerWorker + (workers - 1);
+
+      const total
+
+      subtotalElement.innerHTML = `AED ${subtotal.toFixed(2)}`;
+    } else {
+      subtotalElement.innerHTML = "AED 0.00";
     }
-  };
-  
-  
+  }
+};
+
+const discountCheck = () => {
+  if()
+}
 
 // Event listeners
 const selectService = () => {
@@ -84,9 +84,8 @@ const selectTime = () => {
     time.addEventListener("click", () => {
       timeSelector.forEach((s) => s.classList.remove("active"));
       time.classList.add("active");
-      timming = parseInt(time.innerHTML);
+      timming = time.innerHTML;
       timeCount.innerHTML = timming;
-      calculateSubtotal();
     });
   });
 };
@@ -102,6 +101,4 @@ selectService();
 selectHour();
 selectWorker();
 selectTime();
-savebtn.addEventListener('click', saveInfo);
-
-
+savebtn.addEventListener("click", saveInfo);
