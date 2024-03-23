@@ -1025,7 +1025,11 @@ footer {
   margin-bottom: 1rem;
 }
 .address-right{
-  padding-left: 4rem;
+  flex-basis: 60%;
+}
+.address-right{
+  padding-left: 1rem;
+  flex-basis: 40%;
 }
 .price{
   width: 100%;
