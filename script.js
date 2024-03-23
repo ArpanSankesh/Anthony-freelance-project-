@@ -122,7 +122,20 @@ const saveInfo = () => {
 };
 
 dateSelector.addEventListener("change", () => {
-  dateElement.innerHTML = dateSelector.value; // Update the date element with the selected date
+  const selectedDate = new Date(dateSelector.value);
+  const currentDate = new Date();
+  
+  // Format the date to dd/month/year
+  const options = { day: '2-digit', month: 'long', year: 'numeric' };
+  const formattedDate = selectedDate.toLocaleDateString('en-GB', options);
+  
+  if (selectedDate < currentDate) {
+    alert("Please select a date after today.");
+    dateSelector.value = ""; // Clear the date input field
+    dateElement.innerHTML = "-"; // Update the date element with a placeholder
+  } else {
+    dateElement.innerHTML = formattedDate; // Update the date element with the formatted date
+  }
 });
 
 // Attach event listeners
