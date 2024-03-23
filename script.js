@@ -22,7 +22,6 @@ let serviceCounter = "";
 let addressCounter = "";
 let frequencyCounter = "";
 
-
 // Prices per worker per hour
 const prices = {
   1: [98.88, 137.88, 176.88, 215.88, 254.88, 293.88, 332.88],
@@ -31,16 +30,15 @@ const prices = {
   4: [392.52, 548.52, 704.52, 860.52, 1016.52, 1172.52, 1328.52],
 };
 
-
 const calculateSubtotal = () => {
   if (hours && workers) {
     if (workers >= 1 && workers <= 4 && hours >= 2 && hours <= 8) {
       const pricePerWorker = prices[workers][hours - 2];
 
       const subtotal = pricePerWorker + (workers - 1);
-      
+
       let discount = 0;
-      
+
       // Apply discount based on frequency
       if (frequencyCounter === "Weekly (10% OFF)") {
         discount = subtotal * 0.1; // 10% discount
@@ -60,7 +58,6 @@ const calculateSubtotal = () => {
     }
   }
 };
-
 
 const selectService = () => {
   services.forEach((service) => {
@@ -113,7 +110,7 @@ const selectFrequency = () => {
       frequency.classList.add("active");
       frequencyCounter = frequency.innerHTML;
       console.log(frequencyCounter);
-      calculateSubtotal()
+      calculateSubtotal();
     });
   });
 };
@@ -123,6 +120,10 @@ const saveInfo = () => {
   AddressCount.innerHTML = addressCounter;
   console.log(addressCounter);
 };
+
+dateSelector.addEventListener("change", () => {
+  dateElement.innerHTML = dateSelector.value; // Update the date element with the selected date
+});
 
 // Attach event listeners
 selectService();
