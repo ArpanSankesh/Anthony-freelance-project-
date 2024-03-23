@@ -12,6 +12,7 @@ const AddressCount = document.querySelector(".addressCount");
 const subtotalElement = document.querySelector(".subtotal");
 const totalElement = document.querySelector(".total");
 const discountElement = document.querySelector(".discount");
+const discountText = document.querySelector(".discountText");
 const dateSelector = document.querySelector(".date-selector");
 const dateElement = document.querySelector(".date");
 
@@ -39,13 +40,16 @@ const calculateSubtotal = () => {
 
       let discount = 0;
 
-      // Apply discount based on frequency
+      
       if (frequencyCounter === "Weekly (10% OFF)") {
-        discount = subtotal * 0.1; // 10% discount
+        discount = subtotal * 0.1; 
+        discountText.innerHTML = "Weekly (10% OFF)";
       } else if (frequencyCounter === "Every 2 Weeks (5% OFF)") {
-        discount = subtotal * 0.05; // 5% discount
+        discount = subtotal * 0.05; 
+        discountText.innerHTML = "Every 2 Weeks (5% OFF)";
       } else {
-        discount = 0; // No discount for One Time
+        discount = 0; 
+        discountText.innerHTML = "One Time";
       }
 
       const total = subtotal - discount;
