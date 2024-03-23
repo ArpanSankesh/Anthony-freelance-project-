@@ -29,66 +29,57 @@ const prices = {
   4: [392.52, 548.52, 704.52, 860.52, 1016.52, 1172.52, 1328.52],
 };
 
+// const calculateSubtotal = () => {
+//   if (hours && workers) {
+//     if (workers >= 1 && workers <= 4 && hours >= 2 && hours <= 8) {
+//       const pricePerWorker = prices[workers][hours - 2];
+
+//       const subtotal = pricePerWorker + (workers - 1);
+
+//       subtotalElement.innerHTML = `AED ${subtotal.toFixed(2)}`;
+      
+//       let discount = 0;
+
+//       let total = subtotal - discount;
+
+//       discountElement.innerHTML = `- AED ${discount.toFixed(2)}`;
+//       totalElement.innerHTML = `AED ${total.toFixed(2)}`;
+      
+      
+//     } else {
+//       subtotalElement.innerHTML = "AED 0.00";
+//     }
+//   }
+// };
+
 const calculateSubtotal = () => {
   if (hours && workers) {
     if (workers >= 1 && workers <= 4 && hours >= 2 && hours <= 8) {
       const pricePerWorker = prices[workers][hours - 2];
 
       const subtotal = pricePerWorker + (workers - 1);
-
-      subtotalElement.innerHTML = `AED ${subtotal.toFixed(2)}`;
       
       let discount = 0;
+      
+      // Apply discount based on frequency
+      if (frequencyCounter === "Weekly (10% OFF)") {
+        discount = subtotal * 0.1; // 10% discount
+      } else if (frequencyCounter === "Every 2 Weeks (5% OFF)") {
+        discount = subtotal * 0.05; // 5% discount
+      } else {
+        discount = 0; // No discount for One Time
+      }
 
-      let total = subtotal - discount;
+      const total = subtotal - discount;
 
+      subtotalElement.innerHTML = `AED ${subtotal.toFixed(2)}`;
       discountElement.innerHTML = `- AED ${discount.toFixed(2)}`;
       totalElement.innerHTML = `AED ${total.toFixed(2)}`;
-      
-      
     } else {
       subtotalElement.innerHTML = "AED 0.00";
     }
   }
 };
-
-// const calculateSubtotal = () => {
-//   if (hours && workers) {
-//     if (workers >= 1 && workers <= 4 && hours >= 2 && hours <= 8) {
-//       const pricePerWorker = prices[workers][hours - 2];
-
-//       // Calculate subtotal by multiplying price per worker by the number of workers
-//       const subtotal = pricePerWorker * workers;
-
-//       const serviceFrequency = serviceCounter.trim().toUpperCase();
-//       let discount = 0;
-//       if (serviceFrequency === "WEEKLY") {
-//         discount = subtotal * 0.10; // 10% discount for Weekly
-//       } else if (serviceFrequency === "EVERY 2 WEEKS") {
-//         discount = subtotal * 0.03; // 3% discount for Every 2 Weeks
-//       }
-      
-//       // Calculate total after discount
-//       const total = subtotal - discount;
-
-//       // Update UI
-//       subtotalElement.innerHTML = `AED ${subtotal.toFixed(2)}`;
-//       discountElement.innerHTML = `- AED ${discount.toFixed(2)}`;
-//       totalElement.innerHTML = `AED ${total.toFixed(2)}`;
-//     } else {
-//       // Reset values if workers or hours are out of range
-//       subtotalElement.innerHTML = "AED 0.00";
-//       discountElement.innerHTML = "- AED 0.00";
-//       totalElement.innerHTML = "AED 0.00";
-//     }
-//   } else {
-//     // Reset values if workers or hours are not selected
-//     subtotalElement.innerHTML = "AED 0.00";
-//     discountElement.innerHTML = "- AED 0.00";
-//     totalElement.innerHTML = "AED 0.00";
-//   }
-// };
-
 
 
 const selectService = () => {
@@ -142,6 +133,7 @@ const selectFrequency = () => {
       frequency.classList.add("active");
       frequencyCounter = frequency.innerHTML;
       console.log(frequencyCounter);
+      calculateSubtotal()
     });
   });
 };
