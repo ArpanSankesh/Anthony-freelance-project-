@@ -12,6 +12,8 @@ const AddressCount = document.querySelector(".addressCount");
 const subtotalElement = document.querySelector(".subtotal");
 const totalElement = document.querySelector(".total");
 const discountElement = document.querySelector(".discount");
+const dateSelector = document.querySelector(".date-selector");
+const dateElement = document.querySelector(".date");
 
 let hours = "";
 let workers = "";
@@ -29,28 +31,6 @@ const prices = {
   4: [392.52, 548.52, 704.52, 860.52, 1016.52, 1172.52, 1328.52],
 };
 
-// const calculateSubtotal = () => {
-//   if (hours && workers) {
-//     if (workers >= 1 && workers <= 4 && hours >= 2 && hours <= 8) {
-//       const pricePerWorker = prices[workers][hours - 2];
-
-//       const subtotal = pricePerWorker + (workers - 1);
-
-//       subtotalElement.innerHTML = `AED ${subtotal.toFixed(2)}`;
-      
-//       let discount = 0;
-
-//       let total = subtotal - discount;
-
-//       discountElement.innerHTML = `- AED ${discount.toFixed(2)}`;
-//       totalElement.innerHTML = `AED ${total.toFixed(2)}`;
-      
-      
-//     } else {
-//       subtotalElement.innerHTML = "AED 0.00";
-//     }
-//   }
-// };
 
 const calculateSubtotal = () => {
   if (hours && workers) {
