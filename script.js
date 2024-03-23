@@ -3,18 +3,23 @@ const hourSelector = document.querySelectorAll(".hour-selector");
 const workerSelector = document.querySelectorAll(".professional-selector");
 const workerCount = document.querySelector(".workerCount");
 const timeSelector = document.querySelectorAll(".time-selector");
+const frequencySelector = document.querySelectorAll(".frequency-selector");
 const timeCount = document.querySelector(".timeCount");
 const serviceCount = document.querySelector(".serviceCount");
 const savebtn = document.querySelector(".save-btn");
 const Address = document.querySelector(".address");
 const AddressCount = document.querySelector(".addressCount");
 const subtotalElement = document.querySelector(".subtotal");
+const totalElement = document.querySelector(".total");
+const discountElement = document.querySelector(".discount");
 
 let hours = "";
 let workers = "";
 let timming = "";
 let serviceCounter = "";
 let addressCounter = "";
+let frequencyCounter = "";
+
 
 // Prices per worker per hour
 const prices = {
@@ -31,20 +36,61 @@ const calculateSubtotal = () => {
 
       const subtotal = pricePerWorker + (workers - 1);
 
-      const total
-
       subtotalElement.innerHTML = `AED ${subtotal.toFixed(2)}`;
+      
+      let discount = 0;
+
+      let total = subtotal - discount;
+
+      discountElement.innerHTML = `- AED ${discount.toFixed(2)}`;
+      totalElement.innerHTML = `AED ${total.toFixed(2)}`;
+      
+      
     } else {
       subtotalElement.innerHTML = "AED 0.00";
     }
   }
 };
 
-const discountCheck = () => {
-  if()
-}
+// const calculateSubtotal = () => {
+//   if (hours && workers) {
+//     if (workers >= 1 && workers <= 4 && hours >= 2 && hours <= 8) {
+//       const pricePerWorker = prices[workers][hours - 2];
 
-// Event listeners
+//       // Calculate subtotal by multiplying price per worker by the number of workers
+//       const subtotal = pricePerWorker * workers;
+
+//       const serviceFrequency = serviceCounter.trim().toUpperCase();
+//       let discount = 0;
+//       if (serviceFrequency === "WEEKLY") {
+//         discount = subtotal * 0.10; // 10% discount for Weekly
+//       } else if (serviceFrequency === "EVERY 2 WEEKS") {
+//         discount = subtotal * 0.03; // 3% discount for Every 2 Weeks
+//       }
+      
+//       // Calculate total after discount
+//       const total = subtotal - discount;
+
+//       // Update UI
+//       subtotalElement.innerHTML = `AED ${subtotal.toFixed(2)}`;
+//       discountElement.innerHTML = `- AED ${discount.toFixed(2)}`;
+//       totalElement.innerHTML = `AED ${total.toFixed(2)}`;
+//     } else {
+//       // Reset values if workers or hours are out of range
+//       subtotalElement.innerHTML = "AED 0.00";
+//       discountElement.innerHTML = "- AED 0.00";
+//       totalElement.innerHTML = "AED 0.00";
+//     }
+//   } else {
+//     // Reset values if workers or hours are not selected
+//     subtotalElement.innerHTML = "AED 0.00";
+//     discountElement.innerHTML = "- AED 0.00";
+//     totalElement.innerHTML = "AED 0.00";
+//   }
+// };
+
+
+
 const selectService = () => {
   services.forEach((service) => {
     service.addEventListener("click", () => {
@@ -89,6 +135,16 @@ const selectTime = () => {
     });
   });
 };
+const selectFrequency = () => {
+  frequencySelector.forEach((frequency) => {
+    frequency.addEventListener("click", () => {
+      frequencySelector.forEach((s) => s.classList.remove("active"));
+      frequency.classList.add("active");
+      frequencyCounter = frequency.innerHTML;
+      console.log(frequencyCounter);
+    });
+  });
+};
 
 const saveInfo = () => {
   addressCounter = Address.value;
@@ -101,4 +157,5 @@ selectService();
 selectHour();
 selectWorker();
 selectTime();
+selectFrequency();
 savebtn.addEventListener("click", saveInfo);
