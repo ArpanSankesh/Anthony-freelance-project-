@@ -4,6 +4,7 @@ const workerSelector = document.querySelectorAll(".professional-selector");
 const workerCount = document.querySelector(".workerCount");
 const timeSelector = document.querySelectorAll(".time-selector");
 const frequencySelector = document.querySelectorAll(".frequency-selector");
+const frequencyCount = document.querySelector(".frequencyCount");
 const timeCount = document.querySelector(".timeCount");
 const serviceCount = document.querySelector(".serviceCount");
 const savebtn = document.querySelector(".save-btn");
@@ -112,8 +113,9 @@ const selectFrequency = () => {
     frequency.addEventListener("click", () => {
       frequencySelector.forEach((s) => s.classList.remove("active"));
       frequency.classList.add("active");
+      let frequencyCounter = '';
       frequencyCounter = frequency.innerHTML;
-      console.log(frequencyCounter);
+      frequencyCount.innerHTML = frequencyCounter;
       calculateSubtotal();
     });
   });
@@ -135,10 +137,10 @@ dateSelector.addEventListener("change", () => {
   
   if (selectedDate < currentDate) {
     alert("Please select a date after today.");
-    dateSelector.value = ""; // Clear the date input field
-    dateElement.innerHTML = "-"; // Update the date element with a placeholder
+    dateSelector.value = "";
+    dateElement.innerHTML = "-"; 
   } else {
-    dateElement.innerHTML = formattedDate; // Update the date element with the formatted date
+    dateElement.innerHTML = formattedDate; 
   }
 });
 

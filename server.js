@@ -48,7 +48,7 @@ app.post("/stripe-checkout", async (req, res) => {
     success_url: "http://localhost:3000/success.html",
     cancle_url: "http://localhost:3000/cancel.html",
     billing_address_collection: "required",
-    lint_items: lineItems,
+    line_items: lineItems,
   });
   res.json({ url: session.url });
 });
