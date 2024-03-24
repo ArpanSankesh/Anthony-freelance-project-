@@ -16,6 +16,8 @@ const discountElement = document.querySelector(".discount");
 const discountText = document.querySelector(".discountText");
 const dateSelector = document.querySelector(".date-selector");
 const dateElement = document.querySelector(".date");
+const addOnSelectors = document.querySelectorAll(".add-on-selector");
+const addonContainer = document.querySelector(".addon");
 
 let hours = "";
 let workers = "";
@@ -23,6 +25,7 @@ let timming = "";
 let serviceCounter = "";
 let addressCounter = "";
 let frequencyCounter = "";
+let selectedAddons = [];
 
 // Prices per worker per hour
 const prices = {
@@ -31,6 +34,33 @@ const prices = {
   3: [294.64, 411.64, 528.64, 645.64, 762.64, 879.64, 996.64],
   4: [392.52, 548.52, 704.52, 860.52, 1016.52, 1172.52, 1328.52],
 };
+
+const updateAddonSection = () => {
+  // Clear the addon container
+  addonContainer.innerHTML = "";
+
+  // Calculate total addon price
+  let addonTotalPrice = 0;
+  selectedAddons.forEach(addon => {
+    // Split addon text to get addon name and price
+    const [name, price] = addon.split(" (+");
+    addonTotalPrice += parseFloat(price); // Convert price to float and add to total
+    // Create a div element for each selected addon and append to addon container
+    const addonDiv = document.createElement("div");
+    addonDiv.textContent = name.trim(); // Trim any leading or trailing whitespace
+    addonContainer.appendChild(addonDiv);
+  });
+
+  // Update the subtotal with the addon total price
+  const currentSubtotal = parseFloat(subtotalElement.textContent.split(" ")[1]); // Extract number part
+  const newSubtotal = currentSubtotal + addonTotalPrice;
+  subtotalElement.textContent = `AED ${newSubtotal.toFixed(2)}`;
+
+  // Recalculate total amount
+  const newTotal = newSubtotal;
+  totalElement.textContent = `AED ${newTotal.toFixed(2)}`;
+};
+
 
 const calculateSubtotal = () => {
   if (hours && workers) {
@@ -41,15 +71,14 @@ const calculateSubtotal = () => {
 
       let discount = 0;
 
-      
-      if (frequencyCounter === "Weekly (10% OFF)") {
-        discount = subtotal * 0.1; 
+      if (frequencyCount.innerHTML === "Weekly (10% OFF)") {
+        discount = subtotal * 0.1;
         discountText.innerHTML = "Weekly (10% OFF)";
-      } else if (frequencyCounter === "Every 2 Weeks (5% OFF)") {
-        discount = subtotal * 0.05; 
+      } else if (frequencyCount.innerHTML === "Every 2 Weeks (5% OFF)") {
+        discount = subtotal * 0.05;
         discountText.innerHTML = "Every 2 Weeks (5% OFF)";
       } else {
-        discount = 0; 
+        discount = 0;
         discountText.innerHTML = "One Time";
       }
 
@@ -113,7 +142,7 @@ const selectFrequency = () => {
     frequency.addEventListener("click", () => {
       frequencySelector.forEach((s) => s.classList.remove("active"));
       frequency.classList.add("active");
-      let frequencyCounter = '';
+      let frequencyCounter = "";
       frequencyCounter = frequency.innerHTML;
       frequencyCount.innerHTML = frequencyCounter;
       calculateSubtotal();
@@ -121,28 +150,49 @@ const selectFrequency = () => {
   });
 };
 
+addOnSelectors.forEach((addOnSelector) => {
+  addOnSelector.addEventListener("click", () => {
+    // Toggle active class on click
+    addOnSelector.classList.toggle("active");
+
+    if (addOnSelector.classList.contains("active")) {
+      selectedAddons.push(addOnSelector.textContent);
+    } else {
+      const index = selectedAddons.indexOf(addOnSelector.textContent);
+      if (index !== -1) {
+        selectedAddons.splice(index, 1);
+      }
+    }
+    updateAddonSection();
+  });
+});
+
 const saveInfo = () => {
   addressCounter = Address.value;
   AddressCount.innerHTML = addressCounter;
-  console.log(addressCounter);
+  saveInfoToLocalstorage();
 };
 
 dateSelector.addEventListener("change", () => {
   const selectedDate = new Date(dateSelector.value);
   const currentDate = new Date();
-  
+
   // Format the date to dd/month/year
-  const options = { day: '2-digit', month: 'long', year: 'numeric' };
-  const formattedDate = selectedDate.toLocaleDateString('en-GB', options);
-  
+  const options = { day: "2-digit", month: "long", year: "numeric" };
+  const formattedDate = selectedDate.toLocaleDateString("en-GB", options);
+
   if (selectedDate < currentDate) {
     alert("Please select a date after today.");
     dateSelector.value = "";
-    dateElement.innerHTML = "-"; 
+    dateElement.innerHTML = "-";
   } else {
-    dateElement.innerHTML = formattedDate; 
+    dateElement.innerHTML = formattedDate;
   }
 });
+
+// function savetoLocalStorage(){
+//   localStorage.setItem
+// }
 
 // Attach event listeners
 selectService();
@@ -151,3 +201,29 @@ selectWorker();
 selectTime();
 selectFrequency();
 savebtn.addEventListener("click", saveInfo);
+
+const saveInfoToLocalstorage = () => {
+  // Gather all necessary data
+  const data = {
+    service: serviceCounter,
+    hours: hours,
+    workers: workers,
+    timming: timming,
+    frequency: frequencyCount.innerHTML,
+    address: addressCounter,
+    date: dateElement.innerHTML, // Assuming you want to save the formatted date
+  };
+
+  // Convert data to JSON string
+  const jsonData = JSON.stringify(data);
+
+  // Save data to local storage
+  localStorage.setItem("bookingInfo", jsonData);
+
+  console.log("Data saved to local storage:", data);
+};
+
+// Attach event listener to save button
+savebtn.addEventListener("click", saveInfoToLocalstorage);
+
+saveInfoToLocalstorage();
