@@ -211,7 +211,8 @@ const saveInfoToLocalstorage = () => {
     timming: timming,
     frequency: frequencyCount.innerHTML,
     address: addressCounter,
-    date: dateElement.innerHTML, // Assuming you want to save the formatted date
+    date: dateElement.innerHTML,
+    addons: selectedAddons,
   };
 
   // Convert data to JSON string
