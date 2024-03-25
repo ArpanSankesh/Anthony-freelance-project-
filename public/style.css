@@ -122,7 +122,7 @@ section {
 .hero {
   width: 100%;
   height: 51vw;
-  background: url("/public/Asset/c72af10b.mp4");
+  background: url("Asset/c72af10b.mp4");
   background-size: cover;
   background-position: 0% 50%;
   display: flex;
@@ -195,7 +195,7 @@ section {
 }
 
 .img1 {
-  background: url("/public/Asset/services/house-cleaning-service-min-1600x1068.jpg");
+  backgrounAsset/services/house-cleaning-service-min-1600x1068.jpg");
   background-position: 20%;
   background-size: cover;
   width: 500px;
@@ -354,7 +354,7 @@ section {
 .show-background {
   width: 100%;
   height: 85vh;
-  background-image: url("/public/Asset/services/image-10-copyright.jpg");
+  background-image: url("Asset/services/image-10-copyright.jpg");
   background-position: 60%;
   background-size: cover;
   display: flex;
@@ -584,7 +584,7 @@ footer {
 }
 
 .about-img {
-  background: url("/public/Asset/services/Free\ Photo\ _\ Smiling\ woman\ cleaning\ glassware\ of\ cafeteria.jpeg");
+  background: url("Asset/services/Free\ Photo\ _\ Smiling\ woman\ cleaning\ glassware\ of\ cafeteria.jpeg");
   background-position: 20%;
   background-size: cover;
   width: 500px;
@@ -700,14 +700,14 @@ footer {
 }
 
 .step1-img {
-  background-image: url("/public/Asset/services/Home\ cleaning\ service\,\ business.jpeg");
+  background-image: url("Asset/services/Home\ cleaning\ service\,\ business.jpeg");
   background-size: cover;
   width: 80%;
   height: 60%;
   border-radius: 1rem;
 }
 .step2-img {
-  background-image: url("/public/Asset/services/man-servant-cleaning-house.jpg");
+  background-image: url("Asset/services/man-servant-cleaning-house.jpg");
   width: 80%;
   height: 60%;
   border-radius: 1rem;
@@ -715,7 +715,7 @@ footer {
   background-position: 20% 30%;
 }
 .step3-img {
-  background-image: url("/public/Asset/services/image-18-copyright-qi0n0amuwyy3ijvay0qjj1ustddgbkvdwn7og4yzqg.jpg");
+  background-image: url("Asset/services/image-18-copyright-qi0n0amuwyy3ijvay0qjj1ustddgbkvdwn7og4yzqg.jpg");
   width: 80%;
   height: 60%;
   border-radius: 1rem;
