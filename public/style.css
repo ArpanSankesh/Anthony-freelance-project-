@@ -195,7 +195,7 @@ section {
 }
 
 .img1 {
-  backgrounAsset/services/house-cleaning-service-min-1600x1068.jpg");
+  background:url("Asset/services/house-cleaning-service-min-1600x1068.jpg");
   background-position: 20%;
   background-size: cover;
   width: 500px;
