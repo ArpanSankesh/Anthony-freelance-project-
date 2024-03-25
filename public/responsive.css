@@ -550,6 +550,15 @@
   .service:nth-child(6) {
     padding: 0 1rem 2rem 1rem;
   }
+  .booking-container {
+    flex-direction: column;
+}
+  .booking-right {
+    width: 100%;
+}
+.booking-left {
+  width: 100%;
+}
 }
 
 @media (max-width: 380px) {
@@ -696,4 +705,35 @@
   .col-2 h4 {
     font-size: 0.6rem;
   }
+  .booking-form {
+    padding: 0.1rem;
+}
+.row1 input {
+  margin-top: 0.5rem;
+  height: 30px;
+}
+.row2 input {
+  margin-top: 0.5rem;
+  height: 30px;
+}
+.frequency-selector {
+  padding: 5px;
+  font-size: 0.8rem;
+}
+.add-on-selector {
+  padding: 5px;
+  font-size: 0.8rem;
+}
+.time-selector{
+  padding: 5px;
+  font-size: 0.6rem;
+}
+.date-selector {
+  margin-top: 0rem;
+  height: 30px;
+  font-size: 1rem;
+}
+.question {
+  font-size: 0.8rem;
+}
 }
