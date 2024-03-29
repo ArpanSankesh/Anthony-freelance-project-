@@ -27,6 +27,8 @@ let addressCounter = "";
 let frequencyCounter = "";
 let selectedAddons = [];
 
+
+
 // Prices per worker per hour
 const prices = {
   1: [98.88, 137.88, 176.88, 215.88, 254.88, 293.88, 332.88],
@@ -228,3 +230,28 @@ const saveInfoToLocalstorage = () => {
 savebtn.addEventListener("click", saveInfoToLocalstorage);
 
 saveInfoToLocalstorage();
+
+var item = {
+  title: serviceCount.innerHTML,
+  price: totalElement.innerHTML,
+};
+
+// Update your saveInfo function to handle payment
+const saveInfo2 = async () => {
+  // Your existing code...
+  // Gather all necessary data
+
+  // Send data to server to initiate payment session
+  const response = await fetch('/stripe-checkout', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  });
+
+  const responseData = await response.json();
+
+  // Redirect to Stripe checkout page
+  window.location.href = responseData.url;
+};
