@@ -504,46 +504,6 @@ footer {
 .logo2 img {
   height: 100%;
 }
-.footer-content {
-  width: 60%;
-  padding: 0 4rem 0 0;
-}
-
-.footer-content h1 {
-  color: var(--background-color);
-  font-size: 3rem;
-}
-.footer-menu {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  color: var(--secondary-color);
-  margin-top: 5rem;
-  padding-right: 5rem;
-}
-
-.col-1 {
-  display: flex;
-  gap: 1rem;
-}
-
-.col-1 a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-.col-1 h3 {
-  padding-bottom: 0.5rem;
-}
-
-.col-1 h3:hover {
-  border-bottom: 2px solid var(--secondary-color);
-}
-
-.col-2 h4 {
-  margin-bottom: 1vh;
-}
 
 /* ------------------------------ABOUT_US PAGE-------------------------------- */
 
