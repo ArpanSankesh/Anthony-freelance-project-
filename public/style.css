@@ -493,6 +493,8 @@ footer {
   padding: 3rem;
   display: flex;
   align-items: start;
+  flex-direction: column;
+  gap: 20px;
   justify-content: space-between;
 }
 
@@ -503,6 +505,21 @@ footer {
 }
 .logo2 img {
   height: 100%;
+}
+.social-container{
+  width: 100%;
+  height: calc(100% / 3);
+  background-color: rgba(255, 0, 0, 0.104);
+}
+.link-container{
+  width: 100%;
+  height: calc(100% / 3);
+  background-color: rgba(0, 0, 255, 0.158);
+}
+.brand-container{
+  width: 100%;
+  height: calc(100% / 3);
+  background-color: rgba(255, 255, 0, 0.271);
 }
 
 /* ------------------------------ABOUT_US PAGE-------------------------------- */
