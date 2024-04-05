@@ -582,6 +582,15 @@
   .brand-container .logo {
     height: 30px;
   }
+  .booking-right {
+    padding: 1rem 0.5rem;
+}
+.booking-form {
+  padding: 0rem;
+}
+.booking-container{
+  border-radius: 0;
+}
 }
 
 @media (max-width: 380px) {
