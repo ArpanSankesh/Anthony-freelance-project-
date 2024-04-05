@@ -158,6 +158,31 @@
   .note {
     font-size: 0.8rem;
   }
+  footer {
+    min-height: 30vh;
+    padding: 1rem 8rem;
+    gap: 20px;
+  }
+  .social-container{
+    padding: 0 15rem 10px 15rem;
+  }
+  .social-container i{
+    font-size: 4rem;
+  }
+  .link-container{
+    padding: 0 10rem 10px 10rem;
+    margin-top: 10px;
+  }
+  .link-container a{
+    font-size: 1.7rem;
+  }
+  .brand-container{
+    padding: 0 10rem 10px 10rem;
+    color: var(--background-color);
+    margin-top: 10px;
+  }
+ 
+  
 }
 
 @media (max-width: 900px) {
@@ -257,11 +282,34 @@
   .address {
     gap: 10px;
   }
+  footer {
+    min-height: 30vh;
+    padding: 1rem 5rem;
+    gap: 20px;
+  }
+  .social-container{
+    padding: 0 5rem 10px 5rem;
+  }
+  .social-container i{
+    font-size: 3.5rem;
+  }
+  .link-container{
+    padding: 0 5rem 10px 5rem;
+    margin-top: 10px;
+  }
+  .link-container a{
+    font-size: 1.5rem;
+  }
+  .brand-container{
+    padding: 0 5rem 10px 5rem;
+    margin-top: 10px;
+  }
 }
 
 /* ----------------PHONE----------------------- */
 
-@media (max-width: 450px) {
+
+@media (max-width: 550px) {
   .logo {
     width: 10rem;
     height: 1.7rem;
@@ -405,24 +453,6 @@
     font-size: 2rem;
     line-height: 2rem;
   }
-  footer {
-    height: 25vh;
-    padding: 1rem;
-  }
-  .logo2 {
-    height: 25px;
-    margin-left: 0rem;
-  }
-  .footer-content h1 {
-    font-size: 1.2rem;
-  }
-  .footer-content {
-    padding: 0;
-    width: 80%;
-  }
-  .footer-menu {
-    margin-top: 1rem;
-  }
 
   .col-1 h3 {
     font-size: 0.9rem;
@@ -559,6 +589,39 @@
 .booking-left {
   width: 100%;
 }
+footer {
+  min-height: 20vh;
+  padding: 1rem 2rem;
+  gap: 0;
+}
+.social-container{
+  padding: 0 6rem 10px 6rem;
+}
+.social-container i{
+  font-size: 2.5rem;
+}
+.link-container{
+  padding: 0 3rem 10px 3rem;
+  margin-top: 10px;
+}
+.link-container a{
+  font-size: 1rem;
+}
+.brand-container{
+  padding: 0 0rem 10px 0rem;
+  margin-top: 10px;
+}
+.brand-container i{
+  font-size: 12px;
+  font-weight: 100;
+}
+.brand-container h3{
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+.brand-container .logo{
+  height: 30px;
+}
 }
 
 @media (max-width: 380px) {
@@ -643,6 +706,36 @@
 }
 .booking-info{
   display: none;
+}
+footer {
+  gap: 10px;
+}
+.social-container{
+  padding: 0 6rem 20px 6rem;
+}
+.social-container i{
+  font-size: 2.2rem;
+}
+.link-container{
+  padding: 0 3rem 10px 3rem;
+  margin-top: 0px;
+}
+.link-container a{
+  font-size: 0.8rem;
+}
+.brand-container{
+  padding: 0 0rem 20px 0rem;
+  margin-top: 0px;
+}
+.brand-container i{
+  font-size: 8px;
+}
+.brand-container h3{
+  font-weight: 100;
+  font-size: 0.6rem;
+}
+.brand-container .logo{
+  height: 25px;
 }
 }
 
