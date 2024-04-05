@@ -4,12 +4,10 @@
   .navigation-bar {
     padding: 0 3rem;
   }
-
   .logo {
     width: 10rem;
     height: 3rem;
   }
-
   .hero {
     height: 45rem;
     padding: 6vh;
@@ -20,23 +18,11 @@
   .about-us {
     height: 60vh;
   }
-
   .img1 {
     width: 450px;
     height: 550px;
     background-position: 30%;
   }
-
-  .small-images {
-    width: calc(440px / 3);
-    height: 100%;
-    border-radius: 0.5rem;
-  }
-
-  .small-images-container {
-    width: 450px;
-  }
-
   .service-section {
     padding: 4rem 0rem;
     min-height: 70vh;
@@ -47,19 +33,15 @@
   .service-section h1 {
     font-size: 5.5vh;
   }
-
   .nav-main {
     display: none;
   }
-
   .btn-container i:nth-child(2) {
     display: inline-block;
   }
-
   .about-info {
     padding: 0 2rem;
   }
-
   .about-us {
     min-height: 50vh;
   }
@@ -91,14 +73,6 @@
   }
   .contact-form form .textarea {
     width: 85%;
-  }
-  footer {
-    width: 100%;
-    height: 30vh;
-    padding: 2rem;
-  }
-  .footer-content {
-    width: 66%;
   }
   .heading {
     padding: 3rem 0 0 0;
@@ -163,26 +137,24 @@
     padding: 1rem 8rem;
     gap: 20px;
   }
-  .social-container{
+  .social-container {
     padding: 0 15rem 10px 15rem;
   }
-  .social-container i{
+  .social-container i {
     font-size: 4rem;
   }
-  .link-container{
+  .link-container {
     padding: 0 10rem 10px 10rem;
     margin-top: 10px;
   }
-  .link-container a{
+  .link-container a {
     font-size: 1.7rem;
   }
-  .brand-container{
+  .brand-container {
     padding: 0 10rem 10px 10rem;
     color: var(--background-color);
     margin-top: 10px;
   }
- 
-  
 }
 
 @media (max-width: 900px) {
@@ -225,17 +197,6 @@
   }
   .contact-info {
     padding: 0 0 0 4rem;
-  }
-  .logo2 {
-    height: 40px;
-    margin-left: 1rem;
-  }
-  .footer-content h1 {
-    font-size: 2rem;
-  }
-  .footer-menu {
-    margin-top: 3rem;
-    padding-right: 0rem;
   }
   .col-1 {
     gap: 0.5rem;
@@ -287,27 +248,26 @@
     padding: 1rem 5rem;
     gap: 20px;
   }
-  .social-container{
+  .social-container {
     padding: 0 5rem 10px 5rem;
   }
-  .social-container i{
+  .social-container i {
     font-size: 3.5rem;
   }
-  .link-container{
+  .link-container {
     padding: 0 5rem 10px 5rem;
     margin-top: 10px;
   }
-  .link-container a{
+  .link-container a {
     font-size: 1.5rem;
   }
-  .brand-container{
+  .brand-container {
     padding: 0 5rem 10px 5rem;
     margin-top: 10px;
   }
 }
 
 /* ----------------PHONE----------------------- */
-
 
 @media (max-width: 550px) {
   .logo {
@@ -582,46 +542,46 @@
   }
   .booking-container {
     flex-direction: column;
-}
+  }
   .booking-right {
     width: 100%;
-}
-.booking-left {
-  width: 100%;
-}
-footer {
-  min-height: 20vh;
-  padding: 1rem 2rem;
-  gap: 0;
-}
-.social-container{
-  padding: 0 6rem 10px 6rem;
-}
-.social-container i{
-  font-size: 2.5rem;
-}
-.link-container{
-  padding: 0 3rem 10px 3rem;
-  margin-top: 10px;
-}
-.link-container a{
-  font-size: 1rem;
-}
-.brand-container{
-  padding: 0 0rem 10px 0rem;
-  margin-top: 10px;
-}
-.brand-container i{
-  font-size: 12px;
-  font-weight: 100;
-}
-.brand-container h3{
-  font-weight: 100;
-  font-size: 0.8rem;
-}
-.brand-container .logo{
-  height: 30px;
-}
+  }
+  .booking-left {
+    width: 100%;
+  }
+  footer {
+    min-height: 20vh;
+    padding: 1rem 2rem;
+    gap: 0;
+  }
+  .social-container {
+    padding: 0 6rem 10px 6rem;
+  }
+  .social-container i {
+    font-size: 2.5rem;
+  }
+  .link-container {
+    padding: 0 3rem 10px 3rem;
+    margin-top: 10px;
+  }
+  .link-container a {
+    font-size: 1rem;
+  }
+  .brand-container {
+    padding: 0 0rem 10px 0rem;
+    margin-top: 10px;
+  }
+  .brand-container i {
+    font-size: 12px;
+    font-weight: 100;
+  }
+  .brand-container h3 {
+    font-weight: 100;
+    font-size: 0.8rem;
+  }
+  .brand-container .logo {
+    height: 30px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -696,47 +656,47 @@ footer {
     height: 30px;
     padding: 5px 10px;
   }
-  .time-selector{
+  .time-selector {
     padding: 5px;
     font-size: 0.8rem;
     border-radius: 0.3rem;
   }
   .pricing-info {
     gap: 0.5rem;
-}
-.booking-info{
-  display: none;
-}
-footer {
-  gap: 10px;
-}
-.social-container{
-  padding: 0 6rem 20px 6rem;
-}
-.social-container i{
-  font-size: 2.2rem;
-}
-.link-container{
-  padding: 0 3rem 10px 3rem;
-  margin-top: 0px;
-}
-.link-container a{
-  font-size: 0.8rem;
-}
-.brand-container{
-  padding: 0 0rem 20px 0rem;
-  margin-top: 0px;
-}
-.brand-container i{
-  font-size: 8px;
-}
-.brand-container h3{
-  font-weight: 100;
-  font-size: 0.6rem;
-}
-.brand-container .logo{
-  height: 25px;
-}
+  }
+  .booking-info {
+    display: none;
+  }
+  footer {
+    gap: 10px;
+  }
+  .social-container {
+    padding: 0 6rem 20px 6rem;
+  }
+  .social-container i {
+    font-size: 2.2rem;
+  }
+  .link-container {
+    padding: 0 3rem 10px 3rem;
+    margin-top: 0px;
+  }
+  .link-container a {
+    font-size: 0.8rem;
+  }
+  .brand-container {
+    padding: 0 0rem 20px 0rem;
+    margin-top: 0px;
+  }
+  .brand-container i {
+    font-size: 8px;
+  }
+  .brand-container h3 {
+    font-weight: 100;
+    font-size: 0.6rem;
+  }
+  .brand-container .logo {
+    height: 25px;
+  }
 }
 
 @media (max-width: 300px) {
@@ -800,33 +760,33 @@ footer {
   }
   .booking-form {
     padding: 0.1rem;
-}
-.row1 input {
-  margin-top: 0.5rem;
-  height: 30px;
-}
-.row2 input {
-  margin-top: 0.5rem;
-  height: 30px;
-}
-.frequency-selector {
-  padding: 5px;
-  font-size: 0.8rem;
-}
-.add-on-selector {
-  padding: 5px;
-  font-size: 0.8rem;
-}
-.time-selector{
-  padding: 5px;
-  font-size: 0.6rem;
-}
-.date-selector {
-  margin-top: 0rem;
-  height: 30px;
-  font-size: 1rem;
-}
-.question {
-  font-size: 0.8rem;
-}
+  }
+  .row1 input {
+    margin-top: 0.5rem;
+    height: 30px;
+  }
+  .row2 input {
+    margin-top: 0.5rem;
+    height: 30px;
+  }
+  .frequency-selector {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+  .add-on-selector {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+  .time-selector {
+    padding: 5px;
+    font-size: 0.6rem;
+  }
+  .date-selector {
+    margin-top: 0rem;
+    height: 30px;
+    font-size: 1rem;
+  }
+  .question {
+    font-size: 0.8rem;
+  }
 }
