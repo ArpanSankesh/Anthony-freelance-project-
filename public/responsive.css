@@ -135,23 +135,23 @@
   footer {
     min-height: 30vh;
     padding: 1rem 8rem;
-    gap: 20px;
+    gap: 10px;
   }
   .social-container {
-    padding: 0 15rem 10px 15rem;
+    padding: 2rem 13rem 10px 13rem;
   }
   .social-container i {
     font-size: 4rem;
   }
   .link-container {
-    padding: 0 10rem 10px 10rem;
-    margin-top: 10px;
+    padding: 0 6rem 10px 6rem;
+    margin-bottom: 10px;
   }
   .link-container a {
     font-size: 1.7rem;
   }
   .brand-container {
-    padding: 0 10rem 10px 10rem;
+    padding: 0 6rem 10px 6rem;
     color: var(--background-color);
     margin-top: 10px;
   }
