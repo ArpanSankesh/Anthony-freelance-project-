@@ -695,6 +695,29 @@ hr{
   background: url('Asset/services/service-page-hero-image.jpg');
   background-size: cover;
   background-position: 10%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+}
+
+.service-hero-container{
+  padding: 3rem;
+  z-index: 1;
+}
+
+.service-hero-container h3{
+  color: #fff;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  z-index: 1;
+}
+
+.service-hero-container p{
+  color: #fff;
+  padding-bottom: 0.7rem;
 }
 /* --------------------CART-------------------------- */
 
