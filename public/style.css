@@ -719,6 +719,24 @@ hr{
   color: #fff;
   padding-bottom: 0.7rem;
 }
+
+.service-info{
+  width: 100%;
+  padding: 2rem 0;
+
+}
+
+.service-info p{
+  padding-bottom: 3rem;
+  font-size: 1.18rem;
+  color: #212121a8;
+}
+
+.service-info .bold{
+  color: var(--fontFade-color);
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
 /* --------------------CART-------------------------- */
 
 .booking-form {
