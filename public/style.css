@@ -169,92 +169,6 @@ section {
   text-align: center;
 }
 
-/* <------------------ABOUT US SECTION----------------> */
-
-.about-us {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* margin: 3rem 0; */
-  background-color: #21212108;
-}
-
-.about-pic-container {
-  width: 50%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.img1 {
-  background: url("Asset/services/house-cleaning-service-min-1600x1068.jpg");
-  background-position: 20%;
-  background-size: cover;
-  width: 500px;
-  height: 550px;
-  border-radius: 0.5rem;
-}
-
-.small-images-container {
-  position: relative;
-  height: 120px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.small-images {
-  width: calc(480px / 3);
-  height: 100%;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
-.about-info {
-  width: 50%;
-  height: 100%;
-  padding: 0 3rem 0 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.about-info h4 {
-  margin-bottom: 3rem;
-  font-weight: 700;
-  color: var(--fontFade-color);
-  letter-spacing: 0.2rem;
-}
-
-.about-info h1 {
-  font-size: 5vw;
-  margin-bottom: 3rem;
-  line-height: 5vw;
-  color: var(--fontFade-color);
-}
-
-.about-info p {
-  margin-bottom: 4rem;
-  font-weight: 100;
-  color: var(--fontFade-color);
-  line-height: 1.3rem;
-}
-
-.about-us-btn:hover {
-  background-color: var(--background-color);
-  color: var(--accent-color);
-  border: 2px solid var(--accent-color);
-}
-
 /* <----------SERVICES SECTION--------------> */
 
 .service-section {
@@ -765,62 +679,21 @@ hr{
 }
 
 /* --------------------Service-pg---------------------- */
-
-.service-pg {
+.service-pg{
   width: 100%;
+  min-height: 100vh;
+  padding: 1rem 10rem;
 }
 
-.service-heading {
-  padding-bottom: 2rem;
-}
-
-.intro {
-  padding: 0 10rem;
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-.service {
+.service-hero{
   width: 100%;
-  min-height: 50vh;
-  padding: 5rem;
+  height: 55vh;
+  background-color: red;
+  border-radius: 1rem;
+  background: url('Asset/services/service-page-hero-image.jpg');
+  background-size: cover;
+  background-position: 10%;
 }
-
-.service:nth-child(2n) {
-  padding: 0 5rem;
-}
-
-.service:nth-child(6) {
-  padding: 0 5rem 5rem 5rem;
-}
-
-.service-content {
-  width: 100%;
-  height: 100%;
-  border: 2px solid var(--fontFade-color);
-  padding: 5rem;
-}
-
-.service-content:nth-child(2) {
-  background-color: #21212108;
-}
-
-.service-content h3 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.service-content p {
-  font-size: 1.2rem;
-}
-
-.service-btn-container {
-  margin-top: 2rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 /* --------------------CART-------------------------- */
 
 .booking-form {
