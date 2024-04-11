@@ -601,6 +601,27 @@
 .booking-container{
   border-radius: 0;
 }
+.service-pg {
+  padding: 0rem 0.5rem;
+}
+.service-hero {
+height: 30vh;
+}
+.service-hero-container {
+  padding: 1rem;
+}
+.service-hero-container h3 {
+  padding-bottom: 0.8rem;
+  font-size: 1.4rem;
+}
+.service-info {
+  padding: 1.5rem 0.5rem;
+}
+.service-info p {
+  padding-bottom: 2rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
 }
 
 @media (max-width: 380px) {
