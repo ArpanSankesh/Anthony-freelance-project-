@@ -155,6 +155,12 @@
     color: var(--background-color);
     margin-top: 10px;
   }
+  .service-pg {
+    padding: 0rem 3rem;
+}
+.service-hero {
+  height: 40vh;
+}
 }
 
 @media (max-width: 900px) {
@@ -266,6 +272,9 @@
     padding: 0 5rem 10px 5rem;
     margin-top: 10px;
   }
+  .service-pg {
+    padding: 1rem 3rem;
+}
 }
 
 /* ----------------PHONE----------------------- */
